@@ -1,0 +1,24 @@
+<% include partials/loggerHeader %>
+<div class="container">
+  <div class="card-deck col-md-5 p-lg-5 mx-auto my-5">
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 text-center">Add Goals</h4>
+      </div>
+      <div class="card-body">
+        <form action="/profile" method="post" class="needs-validation">
+          <div class="form-group">
+            <label for="reference">Reference</label>
+            <input type="email" name="reference" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label for="value">Value</label>
+            <input type="number" name="value" class="form-control" placeholder="000.000" required>
+          </div>
+          <input type="submit" class="btn btn-dark btn-lg">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

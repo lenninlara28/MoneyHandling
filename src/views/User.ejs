@@ -1,0 +1,17 @@
+<% include partials/loggerHeader %>
+<div class="container">
+  <div class="card-deck col-md-5 p-lg-5 mx-auto my-5">
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 text-center"><span class="fa fa-user"></span>User Profile</h4>
+      </div>
+      <div class="card-body">
+        <p>
+          <strong>id</strong> : <%= user._id %> <br>
+          <strong>Email</strong> : <%= user.local.email%> <br>
+          <strong>Password</strong> : <%= user.local.password %> <br>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -51,6 +51,29 @@ module.exports = (app, passport) => {
       user: req.user
     });
   });
+
+  app.get('/Goals', (req, res) => {
+    res.render('Goals',{
+      user: req.user
+    });
+  });
+
+  app.get('/Pay', (req, res) => {
+    res.render('Pay',{
+      user: req.user
+    });
+  });
+
+  app.get('/Totals', (req, res) => {
+    res.render('Totals',{
+      user: req.user
+    });
+  });
+  app.get('/User', (req, res) => {
+    res.render('User',{
+      user: req.user
+    });
+  });
 };
 
 function isLoggedIn(req, res, next) {
