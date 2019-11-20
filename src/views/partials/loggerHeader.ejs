@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Money Handling</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+          <a href="/profile" class="navbar-brand d-flex align-items-center">
+            <span class="fa fa-briefcase"></span>
+            <strong>Money Handling</strong>
+          </a>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a href="/profile" class="btn btn-dark"> Main</a>
+            </li>
+            <li class="nav-item">
+              <a href="/Expenses" class="btn btn-dark"> Expenses</a>
+            </li>
+            <li class="nav-item">
+              <a href="/Income" class="btn btn-dark"> Income</a>
+            </li>
+            <li class="nav-item">
+              <a href="/Totals" class="btn btn-dark"> Totals</a>
+            </li>
+          </ul>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a href="/profile" class="nav-link disabled">
+                <span class="fa fa-user"></span>
+                <%= user.local.email %>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/logout" class="btn btn-outline-primary">
+                <span class="fa fa-sign-out"></span> Logout
+              </a>
+            </li>
+        </div>
+      </div>

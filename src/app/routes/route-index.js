@@ -39,6 +39,18 @@ module.exports = (app, passport) => {
     req.logout();
     res.redirect('/');
   });
+
+  app.get('/Expenses', (req, res) => {
+    res.render('Expenses',{
+      user: req.user
+    });
+  });
+
+  app.get('/Income', (req, res) => {
+    res.render('Income',{
+      user: req.user
+    });
+  });
 };
 
 function isLoggedIn(req, res, next) {

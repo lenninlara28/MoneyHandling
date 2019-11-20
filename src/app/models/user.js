@@ -1,10 +1,18 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt-nodejs');
 
+const outlaySchema = new mongoose.Schema({
+  local:{
+    reference: String,
+    value: Number
+  },
+});
+
 const userSchema = new mongoose.Schema({
   local:{
     email: String,
-    password: String
+    password: String,
+    outlay : [outlaySchema]
   },
 });
 
